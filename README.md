@@ -1,0 +1,2 @@
+# zzMavenTest
+maven test project
