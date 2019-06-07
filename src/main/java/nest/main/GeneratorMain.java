@@ -28,14 +28,14 @@ public class GeneratorMain {
         DBConfig config = new DBConfig();
         config.setDriverClass("com.mysql.jdbc.Driver");
         config.setConnectionUrl(
-                "jdbc:mysql://localhost:3306/mimir?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT");
-        config.setUserName("mimir");
-        config.setPassword("mimir*2015");
+                "jdbc:mysql://localhost:3306/lean?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT");
+        config.setUserName("lean");
+        config.setPassword("lean123");
 
         ProjectInfo proj = new ProjectInfo();
-        proj.setName("testMimirNew");
-        proj.setRootPackage("test.mimir.second");
-        proj.setMavenGroupId("test");
+        proj.setName("LeanBack");
+        proj.setRootPackage("com.lean.innovation.api");
+        proj.setMavenGroupId("com.lean.innovation");
         proj.setVersion("0.0.1");
 
         MybatisConfigGenerator gen = new MybatisConfigGenerator(config, proj);

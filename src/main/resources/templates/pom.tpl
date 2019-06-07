@@ -17,6 +17,8 @@
         <mybatis.generator.configurationFile>
             ${basedir}/src/main/resources/mybatis-generator-config.xml
         </mybatis.generator.configurationFile>
+        <jackson.version>2.5.4</jackson.version>
+        <mysql.version>5.1.34</mysql.version>
     </properties>
     <dependencies>
 

@@ -33,7 +33,7 @@ public class ￥MODEL_NAME￥Service {
         return ￥MODEL_VAR_NAME￥;
     }
 
-    public ￥MODEL_NAME￥ delete￥MODEL_NAME￥ById(long id) {
+    public ￥MODEL_NAME￥ delete￥MODEL_NAME￥ById(int id) {
         LOG.info("deleting ￥MODEL_NAME￥" + id);
         ￥MODEL_NAME￥ ￥MODEL_VAR_NAME￥ = ￥MODEL_VAR_NAME￥Mapper.selectByPrimaryKey(id);
         if (￥MODEL_VAR_NAME￥ == null) {
@@ -43,7 +43,7 @@ public class ￥MODEL_NAME￥Service {
         return ￥MODEL_VAR_NAME￥;
     }
 
-    public ￥MODEL_NAME￥ get￥MODEL_NAME￥ById(long id) {
+    public ￥MODEL_NAME￥ get￥MODEL_NAME￥ById(int id) {
         LOG.info("getting ￥MODEL_NAME￥" + id);
         return ￥MODEL_VAR_NAME￥Mapper.selectByPrimaryKey(id);
     }

@@ -61,7 +61,7 @@ public class DaoGenerator extends AbstractBaseGenerator {
                 addDaoAnnotation();
             } catch (Exception e) {
                 e.printStackTrace();
-                throw new IllegalStateException("Failed to generate DAOs.");
+                //throw new IllegalStateException("Failed to generate DAOs.");
             }
             return true;
         }

@@ -84,9 +84,9 @@ public class ￥MODEL_NAME￥Router extends AbstractBaseRouter {
 
     private void get￥MODEL_NAME￥(RoutingContext ctx) {
         String idStr = ctx.request().getParam("id");
-        long id = 0;
+        int id = 0;
         try {
-            id = Long.parseLong(idStr);
+            id = Integer.parseInt(idStr);
         } catch (Exception ex) {
             ex.printStackTrace();
             ErrorMessage err = new ErrorMessage("id '" + idStr + "' 格式错误");
